@@ -1,0 +1,591 @@
+body{
+	background: #F2F2F2;
+	font-family: "Microsoft Yahei";
+	-webkit-tap-highlight-color:transparent;
+}
+header{
+	height: 45px;
+	width: 100%;
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box;
+	max-width: 540px;
+	margin: 0 auto;
+	border-top: 1px solid #CCCCCC;
+	border-bottom: 1px solid #CCCCCC;
+	position: relative;
+}
+
+header .userbtn{
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 50px;
+	height: 43px;
+}
+header .userbtn a{
+	display: block;
+	width: 50px;
+	height: 43px;
+	text-align: center;
+	line-height: 66px;
+	font-size: 12px;
+	text-decoration: none;
+	color:#2EAAE0;
+}
+header .userbtn a::before{
+	content:"";
+	position: absolute;
+	width: 23px;
+	height: 23px;
+	top:4px;
+	left: 14px;
+	background:url(../images/un_ico_home_v66.png) -59px -194.5px;
+	background-size: 104px 327.5px;
+}
+header .soso{
+	width: 100%;
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box;
+	padding-right: 50px;
+	padding-top: 7px;
+	padding-left: 8px;
+}
+header .soso .so_input{
+	width: 100%;
+	height: 26px;
+	border: 1px solid #999999;
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box;
+	background-color: white;
+	border-radius: 4px;
+	box-shadow: 1px 1px 5px 1px rgba(0,0,0,.5);
+	font-size: 12px;
+	line-height: 24px;
+	padding-left: 24px;
+	color:#ccc;
+	position: relative;
+}
+header .soso .so_input::before{
+	content:"";
+	position: absolute;
+	top: 3px;
+	left: 5px;
+	width: 8px;
+	height: 8px;
+	border: 2px solid #666;
+	border-radius: 50%;
+}
+header .soso .so_input::after{
+	content:"";
+	position: absolute;
+	top: 12px;
+	left: 10px;
+	width: 3px;
+	height: 7px;
+	background-color: #666;
+	-webkit-transform:translateX(6px) rotate(-45deg) ;
+	transform:translateX(6px) rotate(-45deg) ;
+}
+
+
+section.banner{
+	width: 100%;
+	max-width: 540px;
+	margin: 0 auto;
+}
+section.banner img{
+	width: 100%;
+}
+
+
+nav{
+	padding: 1px 4px 4px 4px;
+	width: 100%;
+	max-width: 540px;
+	margin: 0 auto;
+	background-color: white;
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box;
+}
+nav ul {
+	overflow: hidden;
+	padding-top:3px;
+}
+nav ul li{
+	float: left;
+	width: 33.3333333%;
+	height: 45px;
+	background-color: pink;
+	border-right: 1px solid white;
+	border-bottom: 1px solid white;
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box;
+}
+nav ul li:nth-child(1){
+	height: 90px;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+nav ul li:nth-child(3){
+	border-top-right-radius: 5px;
+}
+nav ul li:nth-child(5){
+	border-bottom-right-radius: 5px;
+}
+/*层叠最后一个ul*/
+nav ul:last-child li:nth-child(1){
+	height: 45px;
+	border-bottom-left-radius: 0;
+}
+nav ul:last-child li:nth-child(4){
+	border-bottom-left-radius: 5px;
+}
+nav ul:last-child li:nth-child(5){
+	border-bottom-right-radius: 0px;
+}
+nav ul:last-child li:nth-child(6){
+	border-bottom-right-radius: 5px;
+}
+
+/*背景颜色*/
+nav ul:nth-child(1) li{
+	background: #FF697A;
+}
+nav ul:nth-child(2) li{
+	background:#3D98FF;
+}
+nav ul:nth-child(3) li{
+	background: #44C522;
+}
+nav ul:nth-child(4) li{
+	background: #FC9720;
+}
+
+nav ul li a{
+	display: block;
+	width: 100%;
+	line-height: 45px;
+	text-align: center;
+	text-decoration: none;
+	color:white;
+	text-shadow:1px 1px 1px rgba(0,0,0,.65);
+	position: relative;
+}
+
+nav ul li:nth-child(1) a::before{
+	content:"";
+	position: absolute;
+	top: 47px;
+	left: 50%;
+	background-color: red;
+	background:url(../images/un_ico_home_v66.png);
+	background-size: 104px 327.5px;
+}
+
+
+/*小图标*/
+nav ul:nth-child(1) li:nth-child(1) a::before{
+	width: 41px;
+	height: 33px;
+	margin-left: -20.5px;
+	background-position:0 -130px;
+}
+nav ul:nth-child(2) li:nth-child(1) a::before{
+	width: 42px;
+	height: 24px;
+	margin-left: -22px;
+	background-position:-50px -122px;
+}
+
+nav ul:nth-child(3) li:nth-child(1) a::before{
+	width: 35px;
+	height:40.5px;
+	margin-left: -17.5px;
+	background-position:0 -181px;
+	top: 44px;
+}
+
+
+
+
+section.subnav{
+	width: 100%;
+	max-width: 540px;
+	margin: 0 auto;
+	background-color: white;
+	margin-top: 4px;
+	border-radius: 5px;
+	overflow: hidden;
+}
+section.subnav ul li{
+	float: left;
+	width: 25%;
+	height: 68px;
+	text-align: center;
+	line-height: 100px;
+	border-right: 1px solid #F2F2F2;
+	border-bottom: 1px solid #F2F2F2;
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box;
+}
+section.subnav ul li:nth-child(4) , section.subnav ul li:nth-child(8){
+	border-right:none;
+}
+section.subnav ul li a{
+	display: block;
+	width: 100%;
+	height: 68px;
+	text-decoration: none;
+	color:black;
+	text-align: center;
+	position: relative;
+	font-size: 14px;
+}
+section.subnav ul li a::before{
+	content:"";
+	position: absolute;
+	top: 10px;
+	left: 50%;
+	width: 26px;
+	height: 25px;
+	-webkit-transform:translateX(-50%);
+	transform:translateX(-50%);
+	background: url(../images/un_ico_subnav.png);
+	background-size: 26px 235px;
+
+}
+section.subnav ul li:nth-child(1) a::before{
+	background-position: 0 0;
+}
+section.subnav ul li:nth-child(2) a::before{
+	background-position: 0 -30px;
+}
+section.subnav ul li:nth-child(3) a::before{
+	background-position: 0 -60px;
+}
+section.subnav ul li:nth-child(4) a::before{
+	background-position: 0 -90px;
+}
+section.subnav ul li:nth-child(5) a::before{
+	background-position: 0 -120px;
+}
+section.subnav ul li:nth-child(6) a::before{
+	background-position: 0 -150px;
+}
+section.subnav ul li:nth-child(7) a::before{
+	background-position: 0 -180px;
+}
+section.subnav ul li:nth-child(8) a::before{
+	background-position: 0 -210px;
+}
+
+
+section.temaihui{
+	width: 100%;
+	max-width: 540px;
+	margin: 0 auto;
+	border-top: 1px solid #DBDBDB;
+	margin-top: 4px;
+	background-color: white;
+	position: relative;
+	padding: 44px 8px;
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box;
+		overflow: hidden;
+}
+section.temaihui a.hongbao{
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	width: 102px;
+	height: 20px;
+	background:-webkit-linear-gradient(left,#ff4e63,#ff6cc9);
+	border-radius: 4px;
+	color:white;
+	line-height: 20px;
+	text-decoration: none;
+	font-size: 12px;
+	text-align: center;
+}
+section.temaihui>h3{
+	position: absolute;
+	top: 10px;
+	left: 10px;;
+	width: 56px;
+	height: 0px;
+	padding-top: 14.5px;
+	overflow: hidden;
+	background: url(../images/un_home_text.png) 0 0;
+	background-size: 79px 57.5px;
+}
+
+section.temaihui ul li{
+	float: left;
+	background-color: #F9F9F9;
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box;
+	position: relative;
+}
+section.temaihui ul li:nth-child(1){
+	width: 50%;
+	height: 204px;
+	border-right: 2px solid white;
+}
+section.temaihui ul li:nth-child(2){
+	width: 50%;
+	height: 90px;
+	border-left: 2px solid white;
+	border-bottom: 2px solid white;
+}
+section.temaihui ul li:nth-child(3){
+	width: 25%;
+	height: 114px;
+	border-top: 2px solid white;
+	border-right: 2px solid white;
+	border-left: 2px solid white;
+}
+section.temaihui ul li:nth-child(4){
+	width: 25%;
+	height: 114px;
+	border-top: 2px solid white;
+	border-left: 2px solid white;
+}
+section.temaihui ul li:nth-child(1) a{
+	text-decoration: none;
+	color:black;
+}
+section.temaihui ul li:nth-child(1) p img{
+	width: 100%;
+	height: 117px;
+}
+section.temaihui ul li:nth-child(1) span.baokuan{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 38px;
+	height: 20px;
+	background-color: #FD3A51;
+	color:white;
+	font-size: 12px;
+	text-align: center;
+}
+section.temaihui ul li:nth-child(1) span.baokuan::before{
+	content:"";
+	position: absolute;
+	top: 0px;
+	left: 36px;
+	width: 0;
+	height: 0;
+	border: 21px solid #FD3A51;
+	border-left: 10px;
+	border-color: #FD3A51 transparent transparent transparent;
+	border-bottom: none;
+}
+section.temaihui ul li:nth-child(1) p.title{
+	width: 100%;
+	line-height: 24px;
+	overflow: hidden;
+	/*多行文本的省略号*/
+	text-overflow:ellipsis;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	padding: 6px 8px 0px;
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box;
+}
+section.temaihui ul li:nth-child(1) p.detail{
+	width: 100%;
+	padding: 2px 8px 0px;
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box;
+}
+section.temaihui ul li:nth-child(1) p.detail span.price{
+	font-size: 18px;
+	font-weight: bold;
+	color:#FF4E6C;
+}
+section.temaihui ul li:nth-child(1) p.detail span.price b{
+	font-size: 16px;
+}
+section.temaihui ul li:nth-child(1) p.detail span.sheng{
+	padding: 2px 8px;
+	background-color: #FF4E6C;
+	font-size: 12px;
+	border-radius: 10px;
+	color:white;
+}
+
+
+section.temaihui ul li:nth-child(2){
+	background: #F9F9F9 url(../images/pic-tmh-02.png) no-repeat right bottom;
+	background-size: 53.5px 71px;
+}
+section.temaihui ul li:nth-child(2) a{
+	text-decoration: none;
+}
+section.temaihui ul li:nth-child(2) h3{
+	font-size: 16px;
+    color: #FD3A51;
+    text-decoration: none;
+    padding: 0px 10px;
+    line-height: 27px;
+    font-weight: bold;
+}    
+section.temaihui ul li:nth-child(2) p{
+	font-size: 14px;
+    color: red;
+    text-decoration: none;
+    padding: 0px 10px;
+    line-height: 27px;
+    color:#444444;
+}
+
+
+section.HotActivity{
+	width: 100%;
+	max-width: 540px;
+	margin: 0 auto;
+	border-top: 1px solid #DBDBDB;
+	margin-top: 4px;
+	background-color: white;
+	position: relative;
+	padding: 44px 0 0;
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box;
+		overflow: hidden;
+}
+section.HotActivity a.fuli{
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	width: 102px;
+	height: 20px;
+	background:-webkit-linear-gradient(left,#FFAA3B,#FFD25B);
+	border-radius: 4px;
+	color:white;
+	line-height: 20px;
+	text-decoration: none;
+	font-size: 12px;
+	text-align: center;
+}
+section.HotActivity>h3{
+	position: absolute;
+	top: 10px;
+	left: 10px;;
+	width: 86px;
+	height: 0px;
+	padding-top: 14.5px;
+	overflow: hidden;
+	background: url(../images/un_home_text.png) no-repeat 0 -20.5px;
+	background-size: 79px 57.5px;
+}
+section.HotActivity ul li{
+	float: left;
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box;
+}
+section.HotActivity ul li:nth-child(1){
+	width: 50%;
+	border-top: 1px solid #DBDBDB;
+	border-right: 1px solid #DBDBDB;
+	border-bottom: 1px solid #DBDBDB;
+}
+section.HotActivity ul li img{
+	width: 100%;
+	vertical-align: middle;
+}
+section.HotActivity ul li:nth-child(2){
+	width: 50%;
+	border-top: 1px solid #DBDBDB;
+	border-right: 1px solid transparent;
+}
+section.HotActivity ul li:nth-child(3){
+	width: 50%;
+	border-top: 1px solid #DBDBDB;
+	border-right: 1px solid transparent;
+	border-bottom: 1px solid #DBDBDB;
+}
+section.HotActivity ul li:nth-child(4){
+	width: 50%;
+	border-bottom: 1px solid #DBDBDB;
+	border-right: 1px solid #DBDBDB;
+}
+section.HotActivity ul li:nth-child(5){
+	width: 50%;
+	border-bottom: 1px solid #DBDBDB;
+	border-right: 1px solid transparent;	 
+}
+
+.tools{
+	width: 100%;
+	max-width: 540px;
+	margin: 0 auto;
+	background-color: white;
+	border-top: 1px solid #CCCCCC;
+	border-bottom: 1px solid #CCCCCC;
+	margin-top: 8px;
+	background-color: white;
+	overflow: hidden;
+}
+.tools ul li{
+	float: left;
+	width: 33.33333%;
+	height: 50px;
+	text-align: center;
+	line-height: 70px;
+}
+.tools ul li a{
+	text-decoration: none;
+	color:#333333;
+	font-size: 12px;
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.tools ul li a::before{
+	content:"";
+	position: absolute;
+	width: 16px;
+	height: 16px;
+	background-color: red;
+	top: 7px;
+	left: 50%;
+	-webkit-transform:translateX(-50%);
+	transform:translateX(-50%);
+	background: url(../images/un_ico_home_v66.png) no-repeat -60px -153.5px;
+	background-size: 104px 327.5px;
+}
+.tools ul li:nth-child(2) a::before{
+	background-position: -60px -173.5px;
+}
+.tools ul li:nth-child(3) a::before{
+	width: 17.5px;
+	height: 17.5px;
+	background-position: -60px -310px;
+}
+
+footer{
+	text-align: center;
+	line-height: 200%;
+}
+footer a{
+	text-decoration: none;
+	color:#333;
+}
+footer span{
+	border-right: 1px solid black;
+	padding-right: 6px;
+	font-size: 14px;
+	display: inline-block;
+	height: 14px;
+	line-height: 14px;
+}
+footer span:last-child{
+	border: none ;
+}
+footer p:last-child{
+	color:#333;
+	font-size: 12px;
+}
